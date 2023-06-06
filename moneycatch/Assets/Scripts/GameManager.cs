@@ -24,6 +24,7 @@ public class GameManager : MonoBehaviour
     public Button audioButton;
     public Sprite mutedImage;
     public Sprite unmutedImage;
+    public GameObject rain;
 
     void Awake()
     {
@@ -82,6 +83,30 @@ public class GameManager : MonoBehaviour
     public  void GetMoney()
     {
         score++;
+        if (score == 10)
+        {
+            rain.SetActive(true);
+        }
+        if (score == 15)
+        {
+            rain.SetActive(false);
+        }
+        if (score == 20)
+        {
+            rain.SetActive(true);
+        }
+        if(score == 25)
+        {
+            rain.SetActive(false);
+        }
+        if (score == 30)
+        {
+            rain.SetActive(true);
+        }
+        if (score == 35)
+        {
+            rain.SetActive(false);
+        }
         scoreText.text = ""+score;
     }
     public void Restart()
@@ -133,7 +158,8 @@ public class GameManager : MonoBehaviour
     public void AudioControl()
     {
         gameObject.GetComponent<AudioSource>().mute = !gameObject.GetComponent<AudioSource>().mute;
-        if(gameObject.GetComponent<AudioSource>().mute == true)
+        rain.GetComponent<AudioSource>().mute = !gameObject.GetComponent<AudioSource>().mute;
+        if (gameObject.GetComponent<AudioSource>().mute == true)
         {
             audioButton.image.sprite = mutedImage;
             PlayerPrefs.SetInt("mutedAudio", 1);
