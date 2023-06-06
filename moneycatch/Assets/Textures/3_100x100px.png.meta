@@ -78,7 +78,7 @@ TextureImporter:
       213: 5660359182632061013
     second: 3_100x100px_25
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -99,6 +99,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -137,6 +138,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -188,6 +190,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 1
     textureFormat: -1
@@ -736,6 +750,32 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      3_100x100px_7: -415752646863490858
+      3_100x100px_8: 6338600280233261114
+      3_100x100px_18: 4164197915373439400
+      3_100x100px_0: -185879864808683019
+      3_100x100px_9: 7789605749193397384
+      3_100x100px_14: -315636224425907713
+      3_100x100px_16: 8491796037773155830
+      3_100x100px_10: -4655352753495870840
+      3_100x100px_6: -3151872628777375398
+      3_100x100px_13: -4089771997865810844
+      3_100x100px_23: -7631682594052569734
+      3_100x100px_1: 3601883670523993430
+      3_100x100px_5: -5603806442761612132
+      3_100x100px_15: -3009366958209769837
+      3_100x100px_21: 4197451175282517433
+      3_100x100px_3: 7880232085750408059
+      3_100x100px_4: -3727854821687440538
+      3_100x100px_12: -1074562568086355220
+      3_100x100px_17: -402121608919722667
+      3_100x100px_20: -1166197486136981951
+      3_100x100px_11: 4206828980918093880
+      3_100x100px_19: 2614790706434085318
+      3_100x100px_2: 7466116159996832846
+      3_100x100px_22: 2058333855176380644
+      3_100x100px_25: 5660359182632061013
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

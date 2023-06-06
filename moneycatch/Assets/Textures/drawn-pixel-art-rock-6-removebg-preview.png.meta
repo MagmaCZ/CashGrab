@@ -39,7 +39,7 @@ TextureImporter:
       213: 631021505950678225
     second: drawn-pixel-art-rock-6-removebg-preview_11
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -60,6 +60,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -98,6 +99,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -161,6 +163,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 1
     textureFormat: -1
@@ -436,6 +450,19 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      drawn-pixel-art-rock-6-removebg-preview_11: 631021505950678225
+      drawn-pixel-art-rock-6-removebg-preview_0: 2590267314230522699
+      drawn-pixel-art-rock-6-removebg-preview_3: 8640001946314980132
+      drawn-pixel-art-rock-6-removebg-preview_8: 1747257787351572398
+      drawn-pixel-art-rock-6-removebg-preview_10: -8700314262975028364
+      drawn-pixel-art-rock-6-removebg-preview_9: 2707662546897125024
+      drawn-pixel-art-rock-6-removebg-preview_2: 5118742019349927013
+      drawn-pixel-art-rock-6-removebg-preview_4: -386766386681325372
+      drawn-pixel-art-rock-6-removebg-preview_7: 7673426600653648747
+      drawn-pixel-art-rock-6-removebg-preview_6: 6761475105790233392
+      drawn-pixel-art-rock-6-removebg-preview_5: 4861041133237320388
+      drawn-pixel-art-rock-6-removebg-preview_1: 4856351619437072319
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
