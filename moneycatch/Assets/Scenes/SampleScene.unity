@@ -363,71 +363,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &346745702
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4567385399414468663, guid: c0f40e82d4517fb488b54c301b4031c8, type: 3}
-      propertyPath: m_RootOrder
-      value: 14
-      objectReference: {fileID: 0}
-    - target: {fileID: 4567385399414468663, guid: c0f40e82d4517fb488b54c301b4031c8, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.04
-      objectReference: {fileID: 0}
-    - target: {fileID: 4567385399414468663, guid: c0f40e82d4517fb488b54c301b4031c8, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 11.86
-      objectReference: {fileID: 0}
-    - target: {fileID: 4567385399414468663, guid: c0f40e82d4517fb488b54c301b4031c8, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4567385399414468663, guid: c0f40e82d4517fb488b54c301b4031c8, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4567385399414468663, guid: c0f40e82d4517fb488b54c301b4031c8, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4567385399414468663, guid: c0f40e82d4517fb488b54c301b4031c8, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4567385399414468663, guid: c0f40e82d4517fb488b54c301b4031c8, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4567385399414468663, guid: c0f40e82d4517fb488b54c301b4031c8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -90
-      objectReference: {fileID: 0}
-    - target: {fileID: 4567385399414468663, guid: c0f40e82d4517fb488b54c301b4031c8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4567385399414468663, guid: c0f40e82d4517fb488b54c301b4031c8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5796505688043980815, guid: c0f40e82d4517fb488b54c301b4031c8, type: 3}
-      propertyPath: m_Name
-      value: Rain
-      objectReference: {fileID: 0}
-    - target: {fileID: 5796505688043980815, guid: c0f40e82d4517fb488b54c301b4031c8, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6330840569957090040, guid: c0f40e82d4517fb488b54c301b4031c8, type: 3}
-      propertyPath: shapeScaleX
-      value: 9
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: c0f40e82d4517fb488b54c301b4031c8, type: 3}
 --- !u!1 &381052146
 GameObject:
   m_ObjectHideFlags: 0
@@ -1115,7 +1050,6 @@ GameObject:
   - component: {fileID: 760090995}
   - component: {fileID: 760090996}
   - component: {fileID: 760090997}
-  - component: {fileID: 760090998}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: GameManager
@@ -1262,18 +1196,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &760090998
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 760090994}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa2c4f2db67446b4ea170c9931ab57bf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &842811164
 GameObject:
   m_ObjectHideFlags: 0
@@ -2089,7 +2011,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 760090998}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: AdsManager, Assembly-CSharp
         m_MethodName: PlayAd
         m_Mode: 1

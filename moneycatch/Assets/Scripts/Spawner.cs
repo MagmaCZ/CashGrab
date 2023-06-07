@@ -33,7 +33,7 @@ public class Spawner : MonoBehaviour
     Vector3 offset;
     private IEnumerator Spawn()
     {
-        int number = Random.Range(1, 6);
+        int number = Random.Range(1, 10);
         //Rock counter
         if(rockCount >= 3)
         {
@@ -42,8 +42,9 @@ public class Spawner : MonoBehaviour
             pos = transform.position + offset;
             prefabParent = moneyParent.transform;
             rockCount = 0;
+            moneyCount++;
         }
-        if(moneyCount >= 2)
+        else if(moneyCount >= 2)
         {
             offset = new Vector3(transform.position.x + GetPositionOffsetX(-1.7f, 1.71f), transform.position.y);
             chosenPrefab = rock;
@@ -51,7 +52,7 @@ public class Spawner : MonoBehaviour
             prefabParent = rockParent.transform;
         }
         //Rock random pos
-        else if (number == 1 || number == 2 || number == 3)
+        else if (number == 1 || number == 2 || number == 3 || number == 4)
         {
              offset = new Vector3(transform.position.x + GetPositionOffsetX(-1.7f,1.71f), transform.position.y);
             chosenPrefab = rock;
@@ -59,7 +60,7 @@ public class Spawner : MonoBehaviour
             prefabParent = rockParent.transform;
         }
         //Rock close to player pos
-       else if (number == 4)
+       else if (number == 5 || number == 6 || number == 7)
         {
              offset = new Vector3(player.transform.position.x + GetPositionOffsetX(-.5f,.51f), transform.position.y);
             chosenPrefab = rock;
@@ -67,7 +68,7 @@ public class Spawner : MonoBehaviour
             prefabParent = rockParent.transform;
         }
         //Money random pos
-        else if (number == 5)
+        else if (number == 8 || number == 9)
         {
             
             positionOffsetX = Random.Range(-1.7f, 1.71f);
@@ -111,17 +112,17 @@ public class Spawner : MonoBehaviour
     {
         if(GM.score == 10  && count !=2)
         {
-            waitTime =- .05f;
+            waitTime =- .025f;
             count++;
         }
         waitTime = defaultWaitTime - reduceWaitTime;
-        if (waitTime < .3f) { waitTime = .3f; }
+        if (waitTime < .2f) { waitTime = .2f; }
         Debug.Log(waitTime);
         return waitTime;
     }
    public void ShortenWaitTime()
     {
-        reduceWaitTime += 0.005f;
+        reduceWaitTime += 0.0025f;
     }
 
     public float GetPositionOffsetX(float min,float max)
